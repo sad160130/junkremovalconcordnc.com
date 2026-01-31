@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { BUSINESS_PHONE } from "@/lib/services";
 import { LocalBusinessJsonLd } from "@/components/seo/LocalBusinessJsonLd";
 
@@ -44,6 +45,17 @@ export default function Home() {
                 <li>• Move-out &amp; eviction cleanouts</li>
                 <li>• Small commercial junk removal</li>
               </ul>
+            </div>
+            <div className="mt-4 flex flex-wrap gap-3 text-xs text-zinc-600">
+              <span className="rounded-full bg-emerald-50 px-3 py-1 font-medium text-emerald-800">
+                Locally owned &amp; operated
+              </span>
+              <span className="rounded-full bg-emerald-50 px-3 py-1 font-medium text-emerald-800">
+                Free, no-pressure estimates
+              </span>
+              <span className="rounded-full bg-emerald-50 px-3 py-1 font-medium text-emerald-800">
+                Serving Concord since 2015
+              </span>
             </div>
           </div>
 
@@ -154,6 +166,47 @@ export default function Home() {
         </div>
       </section>
 
+      {/* SERVICE PACKAGES */}
+      <section className="mx-auto max-w-5xl px-4 pb-4">
+        <h2 className="text-2xl font-semibold">Common Junk Removal Jobs We Handle</h2>
+        <p className="mt-2 text-sm text-zinc-700">
+          Whether you&apos;re dealing with a single bulky item or a full cleanout,
+          we have you covered.
+        </p>
+        <div className="mt-6 grid gap-6 md:grid-cols-3">
+          <div className="rounded-xl border border-zinc-200 bg-white p-5 shadow-sm">
+            <h3 className="text-base font-semibold">Single-Item Pickup</h3>
+            <p className="mt-2 text-sm text-zinc-700">
+              Perfect for a couch, mattress, appliance or a few bulky items you
+              can&apos;t move on your own.
+            </p>
+            <p className="mt-3 text-xs font-medium text-zinc-600">
+              Starting at simple, upfront pricing. Call for details.
+            </p>
+          </div>
+          <div className="rounded-xl border border-zinc-200 bg-white p-5 shadow-sm">
+            <h3 className="text-base font-semibold">Small Load / Room Cleanout</h3>
+            <p className="mt-2 text-sm text-zinc-700">
+              Ideal for clearing out a bedroom, small storage space or one side
+              of the garage.
+            </p>
+            <p className="mt-3 text-xs font-medium text-zinc-600">
+              We&apos;ll estimate based on photos or a quick walkthrough.
+            </p>
+          </div>
+          <div className="rounded-xl border border-zinc-200 bg-white p-5 shadow-sm">
+            <h3 className="text-base font-semibold">Full Cleanout</h3>
+            <p className="mt-2 text-sm text-zinc-700">
+              For full garage, attic, basement or apartment cleanouts, estate
+              cleanouts and moving situations.
+            </p>
+            <p className="mt-3 text-xs font-medium text-zinc-600">
+              We&apos;ll create a simple plan and handle everything start to finish.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* SERVICE AREA */}
       <section className="border-y border-zinc-200 bg-zinc-100/60">
         <div className="mx-auto max-w-5xl px-4 py-10">
@@ -176,6 +229,15 @@ export default function Home() {
               Huntersville, NC
             </li>
           </ul>
+          <p className="mt-3 text-xs text-zinc-600">
+            Looking for junk removal in Concord, NC? Start with our
+            {" "}
+            <Link href="/services/junk-removal-concord-nc" className="text-emerald-700 hover:underline">
+              main junk removal service page
+            </Link>
+            {" "}
+            to see details about what we haul and how pricing works.
+          </p>
         </div>
       </section>
 
